@@ -1,0 +1,5 @@
+name: testduapi
+version: '1.0'
+main: md.mirrerror.testduapi.PluginMain
+depend:
+  - DiscordUtils
