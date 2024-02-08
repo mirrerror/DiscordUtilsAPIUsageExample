@@ -70,7 +70,7 @@
       <dependency>
           <groupId>io.github.mirrerror</groupId>
           <artifactId>discordutils</artifactId>
-          <version>4.8.1</version>
+          <version>4.8.1-final</version>
           <scope>provided</scope>
       </dependency>
   </dependencies>
