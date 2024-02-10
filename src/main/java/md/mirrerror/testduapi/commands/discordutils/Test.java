@@ -1,7 +1,6 @@
 package md.mirrerror.testduapi.commands.discordutils;
 
 import md.mirrerror.discordutils.commands.SubCommand;
-import md.mirrerror.discordutils.config.messages.Message;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 
@@ -11,7 +10,7 @@ import java.util.List;
 public class Test implements SubCommand {
     @Override
     public void onCommand(CommandSender commandSender, Command command, String label, String[] args) {
-        System.out.println("Test command executed!");
+        System.out.println("Test command executed! Args[0] = " + args[0]);
     }
 
     @Override
@@ -31,11 +30,11 @@ public class Test implements SubCommand {
 
     @Override
     public int getMinArgsNeeded() {
-        return 0;
+        return 1;
     }
 
     @Override
-    public Message getIncorrectUsageErrorMessage() {
-        return Message.UNKNOWN_ERROR;
+    public String getIncorrectUsageErrorMessage() {
+        return "Incorrect usage!";
     }
 }

@@ -14,11 +14,6 @@ public class MyListener implements Listener {
     }
 
     @EventHandler
-    public void onMainGetReady(MainGetReadyEvent event) {
-        plugin.getLogger().info("Main is ready!");
-    }
-
-    @EventHandler
     public void onBotGetReady(BotGetReadyEvent event) {
         plugin.getLogger().info("Bot is ready!");
     }
